@@ -1,0 +1,121 @@
+/* Base body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at bottom right, #1e3a8a 0%, #121212 60%, #0f0f0f 100%);
+  color: #f0f0f0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Container styling for the app */
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+/* Header styling */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Styling the question text */
+.question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+/* Option button styling */
+.option {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+.option:hover {
+  background: #2a2a2a;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.option.selected {
+  background: #2563eb;
+  border: 2px solid #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* Navigation button styles */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #2563eb;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+.nav-buttons button:disabled {
+  background: #2f3c5a;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Restart button styling */
+.restart-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.restart-button:hover {
+  background: #2563eb;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+/* Score display styling */
+.score {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+
